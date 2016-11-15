@@ -10,6 +10,7 @@ import { SignupComponent } from './unprotected/signup.component';
 import { SigninComponent } from './unprotected/signin.component';
 
 import { AppRoutingModule }   from './app-routing.module';
+import { ProductComponent } from './protected/product.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { AppRoutingModule }   from './app-routing.module';
     HeaderComponent,
     SigninComponent,
     SignupComponent,
+    ProductComponent,
   ],
   imports: [
     BrowserModule,

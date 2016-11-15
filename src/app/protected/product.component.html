@@ -1,0 +1,21 @@
+<div class="container">
+<h1 class="text-center login-title">Product form</h1>
+  <div class="account-wall">
+    <form [formGroup]="myForm" (ngSubmit)="onSignin($event)" class="form-signin" >
+      <input formControlName="product" type="text" id="product" class="form-control">
+      <div *ngIf="formErrors.product" class="alert alert-danger">
+        {{ formErrors.product }}
+      </div>
+
+      <input formControlName="domen" type="domen" id="domen" class="form-control">
+
+      <div *ngIf="formErrors.domen" class="alert alert-danger">
+        {{ formErrors.domen }}
+      </div>
+      <br/>
+      <button type="submit" [disabled]="!myForm.valid" class="btn btn-raised btn-info">Create new Product</button>
+
+    </form>
+  </div>
+</div>
+
